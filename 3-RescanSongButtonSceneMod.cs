@@ -54,7 +54,7 @@ public class RescanSongButtonMonoBehaviour : MonoBehaviour, INeedInjection
         // add click handler
         rescanButton.RegisterCallback<MouseUpEvent>(ev =>
         {
-            songMetaManager.ReloadSongMetas();
+            songMetaManager.RescanSongs();
         });
 
         // add text
